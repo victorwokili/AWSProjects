@@ -14,7 +14,9 @@ There will be 2 private database servers.
 
 
 ### **Naming Convention**
-1) VPC
+
+1) **VPC:**
+
  We need to create a VPC containing 2 private and 2 public subnet 
 
     a. Name of public subnet  : jjtech_public_subnet
@@ -31,7 +33,8 @@ There will be 2 private database servers.
       i. region: us-west-2
       ii. CIDR : 10.0.0.0/16
 
-2) Instances
+2) **Instances :**
+
  We need to create 4 instances containing 2 private and 2 public subnet 
 
     a. Name of public subnet 1 : bastion_server
