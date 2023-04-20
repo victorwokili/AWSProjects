@@ -12,6 +12,12 @@ There will be 2 private database servers.
   i. db_server : this private server will be connected to the internet in order to update the latest packages
 
   ii. db2_server : this private server will not be connected to the internet but will be connected to the S3 AWS service only
+ 
+ For the Public Server:
+ 
+  i. bastion_server : should be able to connect the internet and have access to the db_server and db2_server
+  
+  ii. web_server : should have apache installed
 
 
 ### **Naming Convention**
