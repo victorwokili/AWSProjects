@@ -19,17 +19,17 @@ There will be 2 private database servers.
 
  We need to create a VPC containing 2 private and 2 public subnet 
 
-    a. Name of public subnet  : jjtech_public_subnet
+    a. ***Name of public subnet***  : jjtech_public_subnet
     
       i.AZ: us-west-2a
       ii. CIDR : 10.0.1.0/24
       
-    b. Name of private subnet  : jjtech_private_subnet
+    b. ***Name of private subnet***  : jjtech_private_subnet
     
       i.AZ: us-west-2b
       ii. CIDR : 10.0.2.0/24
       
-    c. Name of VPC : JJTechVPC 
+    c. ***Name of VPC*** : JJTechVPC 
       i. region: us-west-2
       ii. CIDR : 10.0.0.0/16
 
