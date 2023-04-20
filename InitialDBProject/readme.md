@@ -53,7 +53,12 @@ There will be 2 private database servers.
   
 
 
-## ASSIGNMENT :
+
+
+
+
+
+# ASSIGNMENT :
 Create an architectural diagram highlighting the user-story and naming convention above.  
 
 ### TIPS: 
