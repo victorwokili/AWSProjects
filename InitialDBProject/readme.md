@@ -13,7 +13,7 @@ There will be 2 private database servers.
   ii. db2_server : this private server will not be connected to the internet but will be connected to the S3 AWS service only
 
 
-### ** Naming Convention **
+### **Naming Convention**
 1) VPC
  We need to create a VPC containing 2 private and 2 public subnet 
 
