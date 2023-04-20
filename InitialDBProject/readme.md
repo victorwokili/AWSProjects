@@ -10,6 +10,7 @@ A web application will need to be created which contains a database. We have dec
 There will be 2 private database servers. 
 
   i. db_server : this private server will be connected to the internet in order to update the latest packages
+
   ii. db2_server : this private server will not be connected to the internet but will be connected to the S3 AWS service only
 
 
@@ -71,4 +72,5 @@ This incorporates concepts such as :
   3) Route Tables
   4) Internet Gateway 
 
-Make sure to incoporate these into your architectural diagram. This diagram will be essential when setting things up in the AWS console
+Make sure to incoporate these into your architectural diagram. This diagram will be essential when setting things up in the AWS console.
+This 
