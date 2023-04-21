@@ -24,7 +24,7 @@ There will be 2 private database servers, 1 public bastion server and 1 public w
   ii. _**web_server** _: should have apache installed
 
 
-### **Naming Convention**
+## **Naming Convention**
 
 1) **VPC:**
 
