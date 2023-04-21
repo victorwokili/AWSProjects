@@ -4,6 +4,7 @@
 
 This project would be used to test VPC, EC2 and S3 skills
 
+<br><br><br>
 ### User Story:
 
 A web application will need to be created which contains a database. We have decided to use AWS PaaS in the creation of this web application. 
