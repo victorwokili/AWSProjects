@@ -22,6 +22,9 @@ There will be 2 private database servers, 1 public bastion server and 1 public w
   i. _**bastion_server**_ : should be able to connect the internet and have access to the db_server and db2_server
   
   ii. _**web_server** _: should have apache installed
+  
+  <br>
+  <br>
 
 
 ## **Naming Convention**
@@ -66,7 +69,10 @@ There will be 2 private database servers, 1 public bastion server and 1 public w
       
   
 
-
+<br>
+<br>
+<br>
+<br>
 
 
 
