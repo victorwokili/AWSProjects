@@ -24,7 +24,7 @@ There will be 2 private database servers.
 
 1) **VPC:**
 
- We need to create a VPC containing 2 private and 2 public subnet 
+ We need to create a VPC containing 1 private and 1 public subnet 
 
     a. Name of public subnet : jjtech_public_subnet
     
