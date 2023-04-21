@@ -44,19 +44,19 @@ There will be 2 private database servers.
 
  We need to create 4 instances containing 2 private and 2 public subnet 
 
-    a. Name of public subnet 1 : bastion_server
+    a. Name of instance 1 : bastion_server
     
       i.subnet: public
       
-    b. Name of public subnet 2 : web_server
+    b. Name of instance 2 : web_server
     
       i.subnet: public
       
-    c. Name of private subnet 1 : db_server
+    c. Name of instance 3 : db_server
     
       i.subnet: private
       
-    d. Name of private subnet 2 : db2_server
+    d. Name of instance 4 : db2_server
     
       i.subnet: private
       
