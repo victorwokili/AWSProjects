@@ -105,7 +105,7 @@ Using the architecture above, recreate the architecture in the AWS console.
 
 <br>
 
-reminders :
+Reminders :
 + Follow the naming convention in the architectural diagram 
 + Follow best security practices (hint: do you use an IAM policy or hard code you access and secret key into you ec2 instances)
 
