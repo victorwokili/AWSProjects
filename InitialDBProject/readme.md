@@ -7,17 +7,19 @@ This project would be used to test VPC, EC2 and S3 skills
 ### User Story:
 
 A web application will need to be created which contains a database. We have decided to use AWS PaaS in the creation of this web application. 
-There will be 2 private database servers. 
+There will be 2 private database servers, 1 public bastion server and 1 public web server.
 
-  i. db_server : this private server will be connected to the internet in order to update the latest packages
+#### For the Private Server:
 
-  ii. db2_server : this private server will not be connected to the internet but will be connected to the S3 AWS service only
+  i. _**db_server**_ : this private server will be connected to the internet in order to update the latest packages
+
+  ii. _**db2_server**_ : this private server will not be connected to the internet but will be connected to the S3 AWS service only
  
- For the Public Server:
+ #### For the Public Server:
  
-  i. bastion_server : should be able to connect the internet and have access to the db_server and db2_server
+  i. _**bastion_server**_ : should be able to connect the internet and have access to the db_server and db2_server
   
-  ii. web_server : should have apache installed
+  ii. _**web_server** _: should have apache installed
 
 
 ### **Naming Convention**
