@@ -82,6 +82,10 @@ There will be 2 private database servers, 1 public bastion server and 1 public w
 
 
 # ASSIGNMENT :
+<br>
+
+## Part 1
+
 Create an architectural diagram highlighting the user-story and naming convention above.  
 
 ### TIPS: 
@@ -93,3 +97,25 @@ This incorporates concepts such as :
 
 Make sure to incoporate these into your architectural diagram. This diagram will be essential when setting things up in the AWS console.
 This 
+
+<br> <br> <br>
+## Part 2
+
+Using the architecture above, recreate the architecture in the AWS console. 
+
+<br>
+
+reminders :
++ Follow the naming convention in the architectural diagram 
++ Follow best security practices (hint: do you use an IAM policy or hard code you access and secret key into you ec2 instances)
+
+<br><br>
+### Notes: 
+
+**1) db_server** : is connected to the internet, you will be downloading sql to this server. Use the website in the block below to install the sql server
+
+    https://tecadmin.net/how-to-install-mysql-8-on-amazon-linux-2/ 
+    
+<br>
+**2) db_server2** : you will need to connect to an s3 bucket and prove it works 
+            
