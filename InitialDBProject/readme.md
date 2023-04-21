@@ -14,6 +14,8 @@ There will be 2 private database servers, 1 public bastion server and 1 public w
   i. _**db_server**_ : this private server will be connected to the internet in order to update the latest packages
 
   ii. _**db2_server**_ : this private server will not be connected to the internet but will be connected to the S3 AWS service only
+  
+  
  
  #### For the Public Server:
  
