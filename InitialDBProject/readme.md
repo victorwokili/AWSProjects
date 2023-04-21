@@ -42,7 +42,7 @@ There will be 2 private database servers.
 
 2) **Instances :**
 
- We need to create 4 instances containing 2 private and 2 public subnet 
+ We need to create 4 instances :
 
     a. Name of instance 1 : bastion_server
     
