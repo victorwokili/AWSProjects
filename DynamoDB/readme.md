@@ -22,3 +22,5 @@ aws dynamodb batch-write-item --request-items file://Reply.json
 9. Explore tables in the console and query
 10. PITR backups
 11. Manual Backups
+
+class 31
