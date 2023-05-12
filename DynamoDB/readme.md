@@ -7,6 +7,12 @@ aws sts get-caller-identity
 
 
 4. Create 4 the DynamoDB tables
+aws dynamodb batch-write-item --request-items file://ProductCatalog.json
+aws dynamodb batch-write-item --request-items file://Forum.json
+aws dynamodb batch-write-item --request-items file://Thread.json
+aws dynamodb batch-write-item --request-items file://Reply.json
+
+
 5. List to confirm tables have been created $ aws dynamodb list-tables
 6. Download sample data
 7. Load sample data
