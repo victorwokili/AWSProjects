@@ -7,6 +7,7 @@ aws sts get-caller-identity
 
 
 4. Create 4 the DynamoDB tables
+5. 
 aws dynamodb batch-write-item --request-items file://ProductCatalog.json 
 
 aws dynamodb batch-write-item --request-items file://Forum.json
