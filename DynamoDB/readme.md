@@ -7,7 +7,10 @@ aws sts get-caller-identity
 
 
 4. Create 4 the DynamoDB tables
- 
+5. List to confirm tables have been created $ aws dynamodb list-tables
+6. Download sample data
+8. Load sample data 
+
 aws dynamodb batch-write-item --request-items file://ProductCatalog.json 
 
 aws dynamodb batch-write-item --request-items file://Forum.json
@@ -16,10 +19,6 @@ aws dynamodb batch-write-item --request-items file://Thread.json
 
 aws dynamodb batch-write-item --request-items file://Reply.json
 
-
-5. List to confirm tables have been created $ aws dynamodb list-tables
-6. Download sample data
-7. Load sample data
-8. Explore tables in the console and query
-9. PITR backups
-Manual Backups
+9. Explore tables in the console and query
+10. PITR backups
+11. Manual Backups
