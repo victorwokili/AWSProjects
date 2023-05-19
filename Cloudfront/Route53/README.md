@@ -6,3 +6,6 @@
  6. Create a route 53 A record for cloud front distribution
  7. Test dns
 Other routing policies.
+
+
+AWS  Certificate Manager : 
