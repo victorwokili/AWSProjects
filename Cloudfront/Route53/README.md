@@ -12,6 +12,10 @@ Architecture:
 
 <img width="1072" alt="image" src="https://github.com/victorwokili/AWSProjects/assets/18079443/1ce95c6d-164c-48ad-a2b6-bd4ada84bbe7">
 
+
+<img width="1040" alt="image" src="https://github.com/victorwokili/AWSProjects/assets/18079443/470111cc-3acb-4bb6-9b5b-f298d4c9420a">
+
+
 We are redirecting to HTTPS in cloud front because we have a certificate:
 
 
