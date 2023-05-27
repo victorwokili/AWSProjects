@@ -12,7 +12,7 @@ Steps:
 11) Copy the topic arn and update the json script. Update the region id on that same line of the file. Line 37
 12) Subscribe to that topic using email
 13) Set up infrastructure
-14) Create an IAM role for EC2 with the policies ( SSM full access, S3 full access, and SNS full access) We already have this IAM role from our last class. We just need to add permissions to it. \n
+14) Create an IAM role for EC2 with the policies ( SSM full access, S3 full access, and SNS full access) We already have this IAM role from our last class. We just need to add permissions to it. <br><br>
 15) Launch 2 amazon linux2 AMI. Attach the role. No user data
 16) Tag Name Webservers
 17) Create a run command document in SSM using ssm-runcommand-doc.json
