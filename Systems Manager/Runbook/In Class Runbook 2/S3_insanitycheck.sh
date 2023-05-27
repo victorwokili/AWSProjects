@@ -1,4 +1,7 @@
 #!/bin/bash
+#Making a call to AWS meta data endpoint
+#pulling the specific meta data for different resources
+#When SNS sends the validation report, it would know and grab this deta
 az=`curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone`
 sg=`curl -s http://169.254.169.254/latest/meta-data/security-groups`
 ami=`curl -s http://169.254.169.254/latest/meta-data/ami-id`
@@ -28,6 +31,7 @@ echo $role | grep InstanceProfileArn | awk -F '/' '{print $2}' | awk -F '"' '{pr
 echo "======================="
 REGION=`echo $az | sed 's/.\{1\}$//'`
 
+#Actual validation check
 echo "======Local Host file check======"
 [[ $(cat /etc/hosts | sed '/^\s*$/d' | wc -l) > 3 ]] && echo "=*NOT OK*=Hosts file is Touched. Content pasted below==" && cat /etc/hosts || echo "==*OK*==Local Host file is not touched=="
 echo ""
