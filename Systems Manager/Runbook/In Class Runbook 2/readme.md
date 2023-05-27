@@ -2,6 +2,8 @@ Steps:
 1) Create Resource Groups
 2)Create Basline
 3) Create Maintenance window
+4) For the SSM Role, give SNS and S3 full access
+5) 
 
 
 Download the insanity files and open in a text editor
