@@ -1,0 +1,91 @@
+ 1  clear
+    2  sdf
+    3  gfs
+    4  fgfg
+    5  sfg
+    6  g
+    7  gs
+    8  fgs
+    9  gs
+   10  clear
+   11  cd /
+   12  cd
+   13  cd /
+   14  ls
+   15  cd var/
+   16  cd ..
+   17  cd var/
+   18  ls
+   19  cd log
+   20  ls
+   21  cat cloud-init-output.log
+   22  sudo cat cloud-init-output.log
+   23  cd /
+   24  clear
+   25  whomai
+   26  clear
+   27  whoami
+   28  ls
+   29  cd home/
+   30  ls
+   31  cd /
+   32  ls
+   33  cd home/
+   34  ls
+   35  cd ec2-user/
+   36  pwd
+   37  cd ..
+   38  pwd
+   39  ls
+   40  cd b
+   41  cd bin/
+   42  ls
+   43  pwd
+   44  cd /
+   45  clear
+   46  exit
+   47  ls
+   48  touch movies
+   49  ls
+   50  cat movies
+   51  touch grociries-list
+   52  ls
+   53  touch songs
+   54  ls
+   55  cat songs
+   56  clear
+   57  ls
+   58  nano movies
+   59  cat movies
+   60  nano songs
+   61  ls
+   62  nano songs
+   63  cat songs
+   64  nano songs
+   65  nano songs
+   66  ls
+   67  clear
+   68  ls
+   69  nano sports
+   70  nano sports
+   71  nano songs
+   72  nano sports
+   73  nano sports
+   74  cat s
+   75  ls
+   76  cat sports
+   77  clear
+   78  ls
+   79  vi courses
+   80  cat courses
+   81  vi jjtech-batches
+   82  cat jjtech-batches
+   83  clear
+   84  man ls
+   85  man cd
+   86  ls -l
+   87  ls
+   88  ls -l
+   89  ll
+   90  clear
+   91  history
