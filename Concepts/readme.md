@@ -1,0 +1,1 @@
+Different concepts for devsecops
