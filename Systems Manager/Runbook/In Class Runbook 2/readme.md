@@ -20,3 +20,9 @@ Steps:
 19) Provide a document name and specify EC2 instance for resource type
 20) Copy and paste the content of the ssm-runcommand-doc.json to it.
 21) Once the command runs, you will see the output in CW logs or in an email since this is intergrated with SNS
+
+
+<br><br><br>
+Example of result
+![IMG_829315F9A919-1](https://github.com/victorwokili/AWSProjects/assets/18079443/aab98317-4d90-4574-8085-325668a1054d)
+<img width="469" alt="image" src="https://github.com/victorwokili/AWSProjects/assets/18079443/48ad353d-5e4b-44dc-bca1-4af92690144c">
