@@ -1,3 +1,3 @@
 # AWSProjects
 
-##Projects given to understand some concepts
+##Basic - Advanced projects to help retain conceptual understanding
