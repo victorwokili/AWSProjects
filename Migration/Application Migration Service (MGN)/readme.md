@@ -126,6 +126,8 @@ after
 
  ## 🎉🎉🎉 CUTOVER COMPLETE 🎉🎉🎉
  ![image](https://github.com/victorwokili/AWSProjects/assets/18079443/bc91a646-331d-4392-8d02-7f20aa2bb941)
+ ![image](https://github.com/victorwokili/AWSProjects/assets/18079443/23c0f29e-9ff0-4e13-af56-a43f87b93e95)
+
 
 
 
