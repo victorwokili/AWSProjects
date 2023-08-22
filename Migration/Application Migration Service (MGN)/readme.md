@@ -1,9 +1,14 @@
 # USING THE APPLICATION MIGRATION SERVICE (MGN)
 
 ### STEPS:
-1. Create an IAM user in the source region
-   - [ ] AWS APPLICATION MIGRATION POLICY
-   - [ ] DOWNLOAD THE CREDENTIALS
+1. Create an IAM user 
+   - [ ] User name : MGN-USER
+   - [ ] Attach Policy: Administrator Access
+   - [ ] Attach Policy : AWSApplicationMigrationAgentPolicy
+   - [ ] Attach Policy : AWSApplicationMigrationAgentPolicy_V2
+   - [ ] Create User
+   - [ ] Grant Access Keys and Download Credentials
+     <br>
 2. Spin up an Amazon EC2 Instance in the source region
 3. SSH Into the instance <br>
    - [ ]  Install Apache
