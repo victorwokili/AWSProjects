@@ -9,7 +9,7 @@
    - [ ] Create User
    - [ ] Grant Access Keys and Download Credentials
      <br>
-2. Spin up an Amazon EC2 Instance in the source region
+2. Spin up an Amazon EC2 Instance in the source region (us-west-1)
 3. SSH Into the instance <br>
    - [ ]  Install Apache
    - [ ]  Create an HTML file so we could have a web application
