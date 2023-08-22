@@ -120,10 +120,15 @@ after
 
 <br>c. **Finalize Cutover**
    - ![image](https://github.com/victorwokili/AWSProjects/assets/18079443/8bb11c0d-2520-4c6b-aa4f-15e282c66249)
-   - ![image](https://github.com/victorwokili/AWSProjects/assets/18079443/bc91a646-331d-4392-8d02-7f20aa2bb941)
 
 
-## CUTOVER COMPLETE
+
+
+ ## 🎉🎉🎉 CUTOVER COMPLETE 🎉🎉🎉
+ ![image](https://github.com/victorwokili/AWSProjects/assets/18079443/bc91a646-331d-4392-8d02-7f20aa2bb941)
+
+
+
 
 
 
