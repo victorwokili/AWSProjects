@@ -20,6 +20,8 @@
             `sudo yum install httpd -y`
    - [ ]   Enable persistent service upon system reboot <br>
             `sudo systemctl enable httpd`
+   - [ ]   Start the Apache Service <br>
+            `sudo systemctl start httpd`
    - [ ]  Create an HTML file so we could have a web application
    - [ ]  Create dummy files and directories on the source server
 5. Go to MGN in the destination region and set it up
