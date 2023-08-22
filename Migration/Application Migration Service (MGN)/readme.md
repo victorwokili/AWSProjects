@@ -26,7 +26,7 @@
          - cd to the HTMl directory <br>
           - `cd /var/www/html/`<br>
          - create an html file <br>
-          -  `vim index.html`<br>
+          -  `sudo vim index.html` or  -  `sudo nano index.html`<br> 
    - [ ]  Create dummy files and directories on the source server
 5. Go to MGN in the destination region and set it up
 6. Use the IAM crentials run it into the command, then use the command from MGN to install the agent on the source server
