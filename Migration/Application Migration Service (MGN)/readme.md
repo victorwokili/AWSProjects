@@ -10,7 +10,7 @@
    - [ ] Grant Access Keys and Download Credentials
      <br>
 2. Spin up an Amazon EC2 Instance in the source region (us-west-1)
-   - For the SG open Port 22 and 80
+   - For the SG open Port 22 (SSH) and 80 (HTTP)
    - Ensure there is a key pair to enable SDSh
      
 4. SSH Into the instance <br>
