@@ -33,13 +33,15 @@ In this project, I granted temporary access to contractors using IAM roles. This
 ```
 
 ## Create a select read-only access for S3 and EC2 or create a custom IAM permission policy (for granular control) to grant access to the role with a time-limited condition.
-4. Under permission policies select ReadOnlyAccess for S3 and EC2
+4a. Under permission policies select ReadOnlyAccess for S3 and EC2
 <img width="1265" alt="image" src="https://github.com/victorwokili/AWSProjects/assets/18079443/cac94397-3e23-4045-8893-ea1bd81966e6">
 <img width="1243" alt="image" src="https://github.com/victorwokili/AWSProjects/assets/18079443/87cd21b2-bac2-4918-934e-b95a0b88dbc6">
 <img width="1307" alt="image" src="https://github.com/victorwokili/AWSProjects/assets/18079443/eb8c70a9-b4fc-4983-a7a1-d06b5411ce41">
 
-
-5. Create a custom permission policy named TemporaryReadAccessPolicy
+<br>
+### OR
+<br>
+4b. Create a custom permission policy named TemporaryReadAccessPolicy
 
 ```
 {
@@ -137,10 +139,7 @@ In this project, I granted temporary access to contractors using IAM roles. This
 				"s3:GetObjectVersion"
 			],
 			"Resource": "*",
-			"Condition": {
-                "DateGreaterThan": {"aws:CurrentTime": "2020-04-01T00:00:00Z"},
-                "DateLessThan": {"aws:CurrentTime": "2020-06-30T23:59:59Z"}
-            }
+
 		}
 	]
 }
@@ -162,20 +161,20 @@ or
 	]
 }
 ```
-
-6. Select the TemporaryReadAcessPolicy and attach it to the role
+5. Select the TemporaryReadAcessPolicy and attach it to the role
 <img width="1254" alt="image" src="https://github.com/victorwokili/AWSProjects/assets/18079443/39bd469c-7ba5-43cb-85a1-0dd635768cfb">
 
 7. Save role name as `ContractorRole`
 <img width="177" alt="image" src="https://github.com/victorwokili/AWSProjects/assets/18079443/f6d4b5b1-1515-4940-8501-49ed651207d7">
 
-8. 
 
 
 ## Create a Custom User
 
+8. Create a custom user named `ContractorUser'
+<img width="1278" alt="image" src="https://github.com/victorwokili/AWSProjects/assets/18079443/2b6816c8-9800-41c6-bdb3-a9ffb882641f">
 
-
+9. 
 
 
 Things to remember:
