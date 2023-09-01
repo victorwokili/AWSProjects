@@ -93,7 +93,7 @@ This JSON policy allows both the "s3.amazonaws.com" and "ec2.amazonaws.com" serv
     ![image](https://github.com/victorwokili/AWSProjects/assets/18079443/ccbd26c1-a557-4bfd-a48e-8c1ac76482b8)
 
 
-## Test ContractorUser with EC2 and Instance
+## Test ContractorUser with EC2 and S3
 This is to simulate an environment <br><br>
 13. Launch EC2 instance in main account
 14. Create S3 buckets in main account
@@ -110,9 +110,16 @@ aws configure set region us-east-1
 aws configure set output json
 ```
 16. Check to see if you can find the EC2 instances : <br>
-![image](https://github.com/victorwokili/AWSProjects/assets/18079443/b28f5486-7595-4009-b70b-51ab19916321)
+![image](https://github.com/victorwokili/AWSProjects/assets/18079443/c3027506-95de-4078-a88d-5892eaf8d190) <br>
+Success:
+![image](https://github.com/victorwokili/AWSProjects/assets/18079443/b28f5486-7595-4009-b70b-51ab19916321) <br>
 
-![image](https://github.com/victorwokili/AWSProjects/assets/18079443/c3027506-95de-4078-a88d-5892eaf8d190)
+17. Check S3 `aws s3 ls` <br>
+![image](https://github.com/victorwokili/AWSProjects/assets/18079443/e9b4f1af-8b7d-4487-808e-aa77e32d54da)
+
+18. 
+
+
 
 
 
