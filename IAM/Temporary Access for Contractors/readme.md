@@ -50,117 +50,27 @@ In this project, I granted temporary access to contractors using IAM roles. This
 
 ## Create a policy for Temporary Access
 9. Create a policy called `TemporaryAccessPolicy`
+10. Copy the code below
 ```
 {
-	"Version": "2012-10-17",
-	"Statement": [
-		{
-			"Sid": "VisualEditor0",
-			"Effect": "Allow",
-			"Action": [
-				"ec2:GetIpamResourceCidrs",
-				"ec2:DescribeInstances",
-				"ec2:GetIpamPoolCidrs",
-				"ec2:GetInstanceUefiData",
-				"ec2:GetEbsEncryptionByDefault",
-				"s3:GetObjectVersionTagging",
-				"ec2:ExportClientVpnClientConfiguration",
-				"ec2:GetHostReservationPurchasePreview",
-				"ec2:GetConsoleScreenshot",
-				"s3:GetStorageLensConfigurationTagging",
-				"s3:GetObjectAcl",
-				"s3:GetBucketObjectLockConfiguration",
-				"ec2:GetLaunchTemplateData",
-				"s3:GetIntelligentTieringConfiguration",
-				"ec2:GetSerialConsoleAccessStatus",
-				"ec2:GetEbsDefaultKmsKeyId",
-				"s3:GetObjectVersionAcl",
-				"ec2:GetIpamDiscoveredResourceCidrs",
-				"s3:GetBucketPolicyStatus",
-				"ec2:GetManagedPrefixListEntries",
-				"s3:GetObjectRetention",
-				"s3:GetBucketWebsite",
-				"s3:GetJobTagging",
-				"s3:GetMultiRegionAccessPoint",
-				"s3:GetObjectAttributes",
-				"ec2:GetNetworkInsightsAccessScopeContent",
-				"s3:GetObjectLegalHold",
-				"s3:GetBucketNotification",
-				"ec2:GetReservedInstancesExchangeQuote",
-				"s3:DescribeMultiRegionAccessPointOperation",
-				"s3:GetReplicationConfiguration",
-				"s3:GetObject",
-				"ec2:GetPasswordData",
-				"ec2:GetAssociatedIpv6PoolCidrs",
-				"s3:DescribeJob",
-				"ec2:GetSpotPlacementScores",
-				"s3:GetAnalyticsConfiguration",
-				"s3:GetObjectVersionForReplication",
-				"ec2:GetAwsNetworkPerformanceData",
-				"ec2:GetIpamDiscoveredAccounts",
-				"s3:GetAccessPointForObjectLambda",
-				"s3:GetStorageLensDashboard",
-				"ec2:GetResourcePolicy",
-				"s3:GetLifecycleConfiguration",
-				"s3:GetAccessPoint",
-				"ec2:GetDefaultCreditSpecification",
-				"s3:GetInventoryConfiguration",
-				"s3:GetBucketTagging",
-				"s3:GetAccessPointPolicyForObjectLambda",
-				"s3:GetBucketLogging",
-				"ec2:GetCapacityReservationUsage",
-				"ec2:GetNetworkInsightsAccessScopeAnalysisFindings",
-				"s3:GetAccelerateConfiguration",
-				"ec2:GetSubnetCidrReservations",
-				"s3:GetObjectVersionAttributes",
-				"s3:GetBucketPolicy",
-				"ec2:GetConsoleOutput",
-				"ec2:ExportClientVpnClientCertificateRevocationList",
-				"s3:GetEncryptionConfiguration",
-				"s3:GetObjectVersionTorrent",
-				"ec2:GetFlowLogsIntegrationTemplate",
-				"s3:GetBucketRequestPayment",
-				"s3:GetAccessPointPolicyStatus",
-				"s3:GetObjectTagging",
-				"s3:GetMetricsConfiguration",
-				"s3:GetBucketOwnershipControls",
-				"s3:GetBucketPublicAccessBlock",
-				"s3:GetMultiRegionAccessPointPolicyStatus",
-				"s3:GetMultiRegionAccessPointPolicy",
-				"s3:GetAccessPointPolicyStatusForObjectLambda",
-				"ec2:GetCoipPoolUsage",
-				"s3:GetBucketVersioning",
-				"s3:GetBucketAcl",
-				"s3:GetAccessPointConfigurationForObjectLambda",
-				"ec2:GetAssociatedEnclaveCertificateIamRoles",
-				"ec2:GetIpamAddressHistory",
-				"s3:GetObjectTorrent",
-				"s3:GetMultiRegionAccessPointRoutes",
-				"s3:GetStorageLensConfiguration",
-				"s3:GetAccountPublicAccessBlock",
-				"ec2:GetManagedPrefixListAssociations",
-				"s3:GetBucketCORS",
-				"s3:GetBucketLocation",
-				"s3:GetAccessPointPolicy",
-				"s3:GetObjectVersion"
-			],
-			"Resource": "*"
-		},
-		{
-			"Sid": "VisualEditor1",
-			"Effect": "Allow",
-			"Action": "sts:AssumeRole",
-			"Resource": "*",
-			"Condition": {
-				"DateGreaterThan": {
-					"aws:CurrentTime": "2023-08-31T00:00:00Z"
-				},
-				"DateLessThan": {
-					"aws:CurrentTime": "2023-09-01T23:59:59Z"
-				}
-			}
-		}
-	]
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": ["s3:*","ec2:*"],
+      "Resource": "*",
+      "Condition": {
+        "DateLessThan": {
+          "aws:CurrentTime": "2023-08-31T23:30:00Z"
+        }
+      }
+    },
+    {
+      "Effect": "Deny",
+      "Action": "s3:*",
+      "Resource": "*"
+    }
+  ]
 }
 ```
 
@@ -169,11 +79,20 @@ In this project, I granted temporary access to contractors using IAM roles. This
 8. Create a custom user named `ContractorUser'
 <img width="1278" alt="image" src="https://github.com/victorwokili/AWSProjects/assets/18079443/2b6816c8-9800-41c6-bdb3-a9ffb882641f">
 
+9. Add permissions
+![image](https://github.com/victorwokili/AWSProjects/assets/18079443/769ae7ec-e00e-4d6a-85d3-a7512145eb20)
+![image](https://github.com/victorwokili/AWSProjects/assets/18079443/e748b2d1-c0c6-4a25-9151-6e7253737a42)
+
+10. 
 
 
-
-Things to remember:
+## Things to remember:
 1. Role:
 ![image](https://github.com/victorwokili/AWSProjects/assets/18079443/e10da5af-8f41-47d9-a8bc-fa677e39ca33)
 
 2.[AWS Policy Generator](https://policysim.aws.amazon.com](https://awspolicygen.s3.amazonaws.com/policygen.html)https://awspolicygen.s3.amazonaws.com/policygen.html) can be used to create policy
+
+
+## reference:
+1. https://www.youtube.com/watch?v=tg7Ahng08h8
+
