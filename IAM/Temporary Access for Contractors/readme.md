@@ -126,6 +126,25 @@ aws configure set region us-east-1
 aws configure set output json
 ```
 
+## CONSOLE ACCESS
+17. Give console access to user
+18. login to console with the user
+19. Assume Role
+    - Click on switch role
+    - Collect the Accout ID of the primary Account
+    - Put the name of the role `ContractorRole`
+![image](https://github.com/victorwokili/AWSProjects/assets/18079443/b0e1e12c-89e8-445a-b2c3-fb843fbab8b8)
+![image](https://github.com/victorwokili/AWSProjects/assets/18079443/2caf9b9d-4a39-4846-a064-458ae5d92145)
+![image](https://github.com/victorwokili/AWSProjects/assets/18079443/9128714d-24b3-486b-8a26-1cca8bdd2a45)
+![image](https://github.com/victorwokili/AWSProjects/assets/18079443/9478793b-bed0-4a3b-9958-6ac099edc56f)
+
+
+
+20. YOu should have access to the AWS Services
+
+![image](https://github.com/victorwokili/AWSProjects/assets/18079443/c1686a2d-d76a-4a92-8cea-26c075113f95)
+
+
 ### Test services
 17. Check to see if you can find the EC2 instances : <br>
 ![image](https://github.com/victorwokili/AWSProjects/assets/18079443/c3027506-95de-4078-a88d-5892eaf8d190) <br>
