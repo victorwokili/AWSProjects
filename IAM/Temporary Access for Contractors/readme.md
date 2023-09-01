@@ -48,12 +48,16 @@ This JSON policy allows both the "s3.amazonaws.com" and "ec2.amazonaws.com" serv
 <br>
 
 <br><br>
-5. Select the TemporaryReadAcessPolicy and attach it to the role
-<img width="1254" alt="image" src="https://github.com/victorwokili/AWSProjects/assets/18079443/39bd469c-7ba5-43cb-85a1-0dd635768cfb">
-<br>  <br>
+
 6. Save role name as `ContractorRole` <br>
 <img width="177" alt="image" src="https://github.com/victorwokili/AWSProjects/assets/18079443/f6d4b5b1-1515-4940-8501-49ed651207d7">
 <br><br>
+
+7. Create a `TemporaryAccessPermission` Policy under contractor role
+![image](https://github.com/victorwokili/AWSProjects/assets/18079443/c10c34c7-2106-4c66-a8c7-2423b3c05930)
+
+
+8. 
 
 ## Create a policy for Temporary Access
 7. Create a policy called `TemporaryAccessPolicy`
