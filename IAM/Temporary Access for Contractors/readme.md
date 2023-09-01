@@ -55,35 +55,102 @@ This JSON policy allows both the "s3.amazonaws.com" and "ec2.amazonaws.com" serv
 
 7. Create a `TemporaryAccessPermission` Policy under contractor role
 ![image](https://github.com/victorwokili/AWSProjects/assets/18079443/c10c34c7-2106-4c66-a8c7-2423b3c05930)
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": "ec2:*",
+            "Resource": "*",
+            "Condition": {
+                "DateLessThan": {
+                    "aws:CurrentTime": "2023-07-31T23:30:00Z"
+                }
+            }
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": "*",
+            "Condition": {
+                "DateLessThan": {
+                    "aws:CurrentTime": "2023-07-31T23:30:00Z"
+                }
+            }
+        },
+        {
+            "Sid": "VisualEditor2",
+            "Effect": "Deny",
+            "Action": "ec2:*",
+            "Resource": "*",
+            "Condition": {
+                "DateGreaterThan": {
+                    "aws:CurrentTime": "2023-09-09T23:30:00Z"
+                }
+            }
+        },
+        {
+            "Sid": "VisualEditor3",
+            "Effect": "Deny",
+            "Action": "s3:*",
+            "Resource": "*",
+            "Condition": {
+                "DateGreaterThan": {
+                    "aws:CurrentTime": "2023-09-09T23:30:00Z"
+                }
+            }
+        }
+    ]
+}
 
+```
+
+<br><br><br>
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:*",
+                "ec2:*"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "DateLessThan": {
+                    "aws:CurrentTime": "2023-08-31T23:30:00Z"
+                }
+            }
+        },
+        {
+            "Effect": "Deny",
+            "Action": [
+                "s3:*",
+                "ec2:*"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "DateGreaterThan": {
+                    "aws:CurrentTime": "2023-09-09T23:30:00Z"
+                }
+            }
+        }
+    ]
+}
+```
+<br><br><br>
 
 8. 
 
 ## Create a policy for Temporary Access
 7. Create a policy called `TemporaryAccessPolicy`
 8. Copy the code below 
-```
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": ["s3:*","ec2:*"],
-      "Resource": "*",
-      "Condition": {
-        "DateLessThan": {
-          "aws:CurrentTime": "2023-08-31T23:30:00Z"
-        }
-      }
-    },
-    {
-      "Effect": "Deny",
-      "Action": "s3:*",
-      "Resource": "*"
-    }
-  ]
-}
-```
+
 
 ## Create a Custom User
 
