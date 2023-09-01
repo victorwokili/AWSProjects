@@ -53,6 +53,10 @@ This JSON policy allows both the "s3.amazonaws.com" and "ec2.amazonaws.com" serv
 <img width="177" alt="image" src="https://github.com/victorwokili/AWSProjects/assets/18079443/f6d4b5b1-1515-4940-8501-49ed651207d7">
 <br><br>
 
+## Create a policy for Temporary Access
+ Create a policy called `TemporaryAccessPermission`
+
+
 7. Create a `TemporaryAccessPermission` Policy under contractor role
 ![image](https://github.com/victorwokili/AWSProjects/assets/18079443/c10c34c7-2106-4c66-a8c7-2423b3c05930)
 ```
@@ -108,7 +112,9 @@ This JSON policy allows both the "s3.amazonaws.com" and "ec2.amazonaws.com" serv
 
 ```
 
-<br><br><br>
+<br><br>
+OR
+<br><br>
 
 ```
 {
@@ -147,9 +153,7 @@ This JSON policy allows both the "s3.amazonaws.com" and "ec2.amazonaws.com" serv
 
 8. 
 
-## Create a policy for Temporary Access
-7. Create a policy called `TemporaryAccessPolicy`
-8. Copy the code below 
+
 
 
 ## Create a Custom User
