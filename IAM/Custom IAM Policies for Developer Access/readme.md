@@ -66,7 +66,7 @@ For the sake of simplicity, simulate a workforce environment containing S3 bucke
   - Bucket 1:
       - name : `thisvaluehastobegloballyuniqueprod`
       - tags:
-        - `environment` : `development`
+        - `environment` : `production`
         - `application` : `webserver`
         - `security`    : `public`
 
