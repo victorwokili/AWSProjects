@@ -26,4 +26,55 @@ from? Document these requirements.
 6. **Access Revocation**: IAM policies were designed with the principle of least privilege. Access was provisioned based on what was needed for developers to perform their roles effectively. Additionally, there were mechanisms in place to promptly revoke access when a developer's role or project changed.
 
 7. **Regular Review**: The organization committed to periodic reviews of IAM policies to align them with changing requirements and ensure ongoing security and compliance.
-8. 
+
+## STEPS
+
+### CREATE AWS RESOURCES TO EMULATE AN ENVIRONMENT
+For the sake of simplicity, simulate a workforce environment containing S3 buckets and EC2 instances.  <br>
+
+![image](https://github.com/victorwokili/AWSProjects/assets/18079443/347f4a07-b77b-44e9-a8c2-5d0908551465)
+
+<br>
+
+1. Create 2 EC2 instances for a production environment with the following parameters
+  - Instance 1:
+      - name : `webServerProd`
+      - tags:
+        - `environment` : `production`
+        - `application` : `webserver`
+
+  - Instance 2:
+      - name : `dbServerProd`
+      - tags:
+        - `environment` : `production`
+        - `application` : `databaseserver`
+
+2. Create 2 EC2 instances for a dev environment with the following parameters
+  - Instance 1:
+      - name : `webServerDev`
+      - tags:
+        - `environment` : `development`
+        - `application` : `webserver`
+
+  - Instance 2:
+      - name : `dbServerProd`
+      - tags:
+        - `environment` : `development`
+        - `application` : `databaseserver`
+
+3. Create an S3 bucket for a production environment with the following parameters
+  - Bucket 1:
+      - name : `thisvaluehastobegloballyuniqueprod`
+      - tags:
+        - `environment` : `development`
+        - `application` : `webserver`
+        - `security`    : `public`
+
+
+3. Create an S3 buckets for a production environment with the following parameters
+  - Bucket 1:
+      - name : `thisvaluehastobegloballyuniquedev`
+      - tags:
+        - `environment` : `development`
+        - `application` : `webserver`
+        - `security`    : `confidential`
