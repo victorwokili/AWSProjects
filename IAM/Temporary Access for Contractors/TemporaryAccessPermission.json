@@ -1,0 +1,31 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:*",
+                "ec2:*"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "DateLessThan": {
+                    "aws:CurrentTime": "2023-08-31T23:30:00Z"
+                }
+            }
+        },
+        {
+            "Effect": "Deny",
+            "Action": [
+                "s3:*",
+                "ec2:*"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "DateGreaterThan": {
+                    "aws:CurrentTime": "2023-09-01T07:30:00Z"
+                }
+            }
+        }
+    ]
+}
