@@ -12,7 +12,7 @@ In this project, I granted temporary access to contractors using IAM roles. This
 2. Considering there are 2 aws services needed create a custom trust policy 
 <img width="1261" alt="image" src="https://github.com/victorwokili/AWSProjects/assets/18079443/504edd57-71bb-4de1-8a43-2cb3e2139298">
 <br><br>
-3. Paste the code below that allows S3 and EC2 access **(will need user ARN from step 11)** <br><br>
+3. Paste the code below that allows S3 and EC2 access **(will need user ARN from step 9)** <br><br>
 This JSON policy allows both the "s3.amazonaws.com" and "ec2.amazonaws.com" services to assume the "ContractorRole" by users matching the specified AWS IAM user ARN.
 
 ```
@@ -49,16 +49,17 @@ This JSON policy allows both the "s3.amazonaws.com" and "ec2.amazonaws.com" serv
 
 <br><br>
 
-6. Save role name as `ContractorRole` <br>
+5. Save role name as `ContractorRole` <br>
 <img width="177" alt="image" src="https://github.com/victorwokili/AWSProjects/assets/18079443/f6d4b5b1-1515-4940-8501-49ed651207d7">
 <br><br>
 
 ## Create a policy for Temporary Access
- Create a policy called `TemporaryAccessPermission`
+ Create a policy called `TemporaryAccessPolicy`
 
 
-7. Create a `TemporaryAccessPermission` Policy under contractor role
-![image](https://github.com/victorwokili/AWSProjects/assets/18079443/c10c34c7-2106-4c66-a8c7-2423b3c05930)
+6. Create a `TemporaryAccessPolicy` Policy under contractor role
+![image](https://github.com/victorwokili/AWSProjects/assets/18079443/04ca6bf8-b463-46af-839a-62f1c69442ca)
+
 ```
 {
     "Version": "2012-10-17",
@@ -151,28 +152,28 @@ OR
 ```
 <br><br><br>
 
-8. 
+ 
 
 
 
 
 ## Create a Custom User
 
-9. Create a custom user named `ContractorUser'
+7. Create a custom user named `ContractorUser'
 <img width="1278" alt="image" src="https://github.com/victorwokili/AWSProjects/assets/18079443/2b6816c8-9800-41c6-bdb3-a9ffb882641f">
 <br>
-10. Add permissions
+8. Add permissions
 
 ![image](https://github.com/victorwokili/AWSProjects/assets/18079443/769ae7ec-e00e-4d6a-85d3-a7512145eb20)
 
 ![image](https://github.com/victorwokili/AWSProjects/assets/18079443/e748b2d1-c0c6-4a25-9151-6e7253737a42)
 
 <br>
-12. Grab user ARN
+9. Grab user ARN
 
 ![image](https://github.com/victorwokili/AWSProjects/assets/18079443/3d1d072d-1e70-44a9-91a1-8df0b4833a1b)
 <br><br>
-13. For programatic access, collect access and secret access key
+10. For programatic access, collect access and secret access key
 <br>
 
 ![image](https://github.com/victorwokili/AWSProjects/assets/18079443/ccbd26c1-a557-4bfd-a48e-8c1ac76482b8)
@@ -181,10 +182,10 @@ OR
 
 ## Test ContractorUser with EC2 and S3
 This is to simulate an environment <br><br>
-14. Launch EC2 instance in main account
+11. Launch EC2 instance in main account
 
-15. Create S3 buckets in main account
-16. login to AWS programatically with access keys
+12. Create S3 buckets in main account
+13. login to AWS programatically with access keys
     
 - configure AWS in terminal `aws configure`
 
@@ -202,34 +203,45 @@ aws configure set output json
 ```
 
 ## CONSOLE ACCESS
-17. Give console access to user
-18. login to console with the user
-19. Assume Role
+14. Give console access to user
+15. login to console with the user
+16. Assume Role
     - Click on switch role
     - Collect the Accout ID of the primary Account
-    - Put the name of the role `ContractorRole`
+    - Put the name of the role `ContractorRole` <br>
 ![image](https://github.com/victorwokili/AWSProjects/assets/18079443/b0e1e12c-89e8-445a-b2c3-fb843fbab8b8)
+
+<br>
+
+
 ![image](https://github.com/victorwokili/AWSProjects/assets/18079443/2caf9b9d-4a39-4846-a064-458ae5d92145)
+
+<br>
+
 ![image](https://github.com/victorwokili/AWSProjects/assets/18079443/9128714d-24b3-486b-8a26-1cca8bdd2a45)
+
+<br>
+
 ![image](https://github.com/victorwokili/AWSProjects/assets/18079443/9478793b-bed0-4a3b-9958-6ac099edc56f)
 
+<br>
 
-
-20. YOu should have access to the AWS Services
+17. You should have access to the AWS Services <br>
 
 ![image](https://github.com/victorwokili/AWSProjects/assets/18079443/c1686a2d-d76a-4a92-8cea-26c075113f95)
 
+<br>
 
 ### Test services
-17. Check to see if you can find the EC2 instances : <br>
+18. Check to see if you can find the EC2 instances : <br>
 ![image](https://github.com/victorwokili/AWSProjects/assets/18079443/c3027506-95de-4078-a88d-5892eaf8d190) <br>
 Success: <br>
 ![image](https://github.com/victorwokili/AWSProjects/assets/18079443/b28f5486-7595-4009-b70b-51ab19916321) <br>
 
-18. Check S3 `aws s3 ls` <br>
+19. Check S3 `aws s3 ls` <br>
 ![image](https://github.com/victorwokili/AWSProjects/assets/18079443/e9b4f1af-8b7d-4487-808e-aa77e32d54da)
 <br>
-19. Try using a different service from S3 and EC2
+20. Try using a different service from S3 and EC2
 
 ![image](https://github.com/victorwokili/AWSProjects/assets/18079443/356e0a43-9325-44ba-83f1-22cc2918b7b4)
 
