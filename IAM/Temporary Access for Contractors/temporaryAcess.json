@@ -13,7 +13,7 @@
     },
     {
       "Effect": "Deny",
-      "Action": "s3:*",
+      "Action": ["s3:*","ec2:*"],
       "Resource": "*"
     }
   ]
