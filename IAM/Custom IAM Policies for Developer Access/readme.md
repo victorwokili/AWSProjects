@@ -110,7 +110,7 @@ This policy grants full access to EC2 instances with the specified tags while st
                 },
                 "IpAddress": {
                     "aws:SourceIp": [
-                        "45.25.83.246"
+                        "xx.xx.xx.xxx"
                     ]
                 }
             }
