@@ -3,7 +3,7 @@
 During a project at my previous role, I was responsible for managing IAM users and roles to ensure proper access control across the organization's AWS accounts. One specific scenario involved granting temporary access to contractors who needed limited permissions. I created IAM roles with the necessary policies and configured AssumeRole permissions for the contractors. By implementing this, we ensured that contractors had access only to the resources required for their tasks and that their access was automatically revoked once their tasks were completed. This approach enhanced security by minimizing the exposure of sensitive resources.
 
 
-In this project, I granted temporary access to contractors using IAM roles. This will allow them to access specific resources for a limited time, enhancing security and minimizing resource exposure.
+In summary, I granted temporary access to contractors using IAM roles. This will allow them to access specific resources for a limited time, enhancing security and minimizing resource exposure.
 
 
 <br><br>
