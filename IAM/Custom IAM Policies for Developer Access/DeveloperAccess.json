@@ -1,0 +1,26 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "ec2:Describe*",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "ec2:*",
+            "Resource": "*",
+            "Condition": {
+                "StringEquals": {
+                    "ec2:ResourceTag/environment": "production",
+                    "ec2:ResourceTag/application": "webserver"
+                },
+                "IpAddress": {
+                    "aws:SourceIp": [
+                        "xx.xx.xx.xxx"
+                    ]
+                }
+            }
+        }
+    ]
+}
