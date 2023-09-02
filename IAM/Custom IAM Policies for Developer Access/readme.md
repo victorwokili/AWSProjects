@@ -71,10 +71,52 @@ For the sake of simplicity, simulate a workforce environment containing S3 bucke
         - `security`    : `public`
 
 
-3. Create an S3 buckets for a production environment with the following parameters
+4. Create an S3 buckets for a production environment with the following parameters
   - Bucket 1:
       - name : `thisvaluehastobegloballyuniquedev`
       - tags:
         - `environment` : `development`
         - `application` : `webserver`
         - `security`    : `confidential`
+       
+
+## Create Users and Groups in the IAM Portal
+1. Create user groups
+    - `name` : `Developers-Prod`
+    - `name` : `Developers-Dev`
+
+2. Create users
+
+
+## Create group policy
+This policy grants full access to EC2 instances with the specified tags while still restricting access to only the allowed IP addresses. Adjust the IP addresses as needed for your use case.
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "ec2:Describe*",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "ec2:*",
+            "Resource": "*",
+            "Condition": {
+                "StringEquals": {
+                    "ec2:ResourceTag/environment": "production",
+                    "ec2:ResourceTag/application": "webserver"
+                },
+                "IpAddress": {
+                    "aws:SourceIp": [
+                        "45.25.83.246"
+                    ]
+                }
+            }
+        }
+    ]
+}
+
+```
+
