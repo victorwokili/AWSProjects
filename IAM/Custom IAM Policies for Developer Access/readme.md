@@ -2,7 +2,7 @@
 <br>
 <br>
 
-### Scenario:
+### Experience:
 My organization needed to grant different levels of access to a group of developers working on a critical application.
 However, standard AWS managed policies don't exactly fit my requirements. I crafted custom IAM policies tailored to the developers' specific tasks
 and resource requirements. This project will involve specifying fine-grained permissions, using conditions to control access based on IP ranges 
