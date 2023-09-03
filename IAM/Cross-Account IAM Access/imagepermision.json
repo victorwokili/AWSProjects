@@ -1,0 +1,25 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListBucket",
+                "s3:List*",
+                "s3:Describe*",
+                "s3-object-lambda:List*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::testoelabipm*"
+        },
+        {
+            "Effect": "Deny",
+            "Action": "s3:*",
+            "NotResource": "arn:aws:s3:::testoelabipm*"
+        }
+    ]
+}
