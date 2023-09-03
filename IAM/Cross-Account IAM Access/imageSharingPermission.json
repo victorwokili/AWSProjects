@@ -2,26 +2,16 @@
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "VisualEditor1",
             "Effect": "Allow",
-            "Action": "s3:*",
-            "Resource": "*",
-            "Condition": {
-                "DateLessThan": {
-                    "aws:CurrentTime": "2023-07-31T23:30:00Z"
-                }
-            }
+            "Action": [
+                "s3:List*"
+            ],
+            "Resource": "*"
         },
         {
-            "Sid": "VisualEditor3",
-            "Effect": "Deny",
+            "Effect": "Allow",
             "Action": "s3:*",
-            "Resource": "*",
-            "Condition": {
-                "DateGreaterThan": {
-                    "aws:CurrentTime": "2023-09-09T23:30:00Z"
-                }
-            }
+            "Resource": "arn:aws:s3:::testoelabipm*"
         }
     ]
 }
