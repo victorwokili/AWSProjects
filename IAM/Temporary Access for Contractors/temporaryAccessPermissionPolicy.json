@@ -14,7 +14,11 @@
     {
       "Effect": "Deny",
       "Action": ["s3:*","ec2:*"],
-      "Resource": "*"
+      "Resource": "*",
+       "Condition": {
+        "DateLessThan": {
+          "aws:CurrentTime": "2023-09-31T23:30:00Z"
+        }
     }
   ]
 }
