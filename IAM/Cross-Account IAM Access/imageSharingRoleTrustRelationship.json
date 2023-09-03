@@ -5,7 +5,7 @@
             "Effect": "Allow",
             "Action": "sts:AssumeRole",
             "Principal": {
-                "AWS": ["410474040038","034086922645"]
+                "AWS": ["AWS ACCONT NUMBER 1","AWS ACCOUNT NUMBER 2"]
             },
             "Condition": {}
         }
