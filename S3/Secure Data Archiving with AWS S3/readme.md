@@ -25,12 +25,32 @@ This is to ensure  least priviledged access. The granularity level all depends o
 
 <br>
 
+## Enable Versioning and MFA Delete
+
 3. Enable versioning to all buckets in scope
 4. Enable MFA delete to all buckets in scope
   - Ensure the root user account has an MFA device to ensure correct configuration via CLI
   - MFA Delete can be only done via CLI
+```
+aws s3api put-bucket-versioning --bucket YOUR-OWN-BUCKET-NAME  --versioning-configuration Status=Enabled,MFADelete=Enabled --mfa "MFA-ARN MFA-CODE-from-phone"
+```
+<br><br>
+![image](https://github.com/victorwokili/AWSProjects/assets/18079443/fbc43140-0be6-4af9-b3e6-c131008af1bc)
+<br><br>
+
+
 
 5. 
 
 
-2) 
+
+## Troubleshooting
+1. You can only enable MFA delete with root account
+  - Configure profile in CLI; in this case the CLI profile is named "root"
+      -  `aws configure --profile root`
+<br><br>
+```
+aws s3api put-bucket-versioning --bucket NAMEOFBUCKET  --versioning-configuration Status=Enabled,MFADelete=Enabled --mfa "REPLACE_THIS_WITH_MFA_ARN MFA_TOKEN" --profile root
+```
+<br><br>
+2. 
