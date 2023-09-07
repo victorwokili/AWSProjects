@@ -12,3 +12,9 @@
 
     as you can see, this the Route Table containing the IGW is not a main route table
    <img width="1030" alt="image" src="https://user-images.githubusercontent.com/18079443/233167718-a3f8e9ec-6f27-417b-932a-0a8ec747c4f7.png">
+
+
+
+4. Ensure there is no outbound rule for the SG 
+<img width="1116" alt="image" src="https://github.com/victorwokili/AWSProjects/assets/18079443/ed2748e6-c7f7-4eb1-89f5-274c03a61855">
+
