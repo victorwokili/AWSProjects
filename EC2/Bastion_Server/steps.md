@@ -4,7 +4,9 @@
 
 2.Create a Security group and give it a name Bastion-SG. Open port 22 to the internet. Copy the ID of the Bastion SG
 
-3.Create another Security group with name Appserver-SG. Open port 22 to Bastion-SG
+3.Create another Security group with name Appserver-SG. Open port 22 to Bastion-SG. Ensure there is no outbound rule for the SG 
+<img width="1116" alt="image" src="https://github.com/victorwokili/AWSProjects/assets/18079443/ed2748e6-c7f7-4eb1-89f5-274c03a61855">
+
 
 4.Create 1 instance in a public subnet using Amazon linux 2 AMI and give it a name Test-Bastion. Use the Bastion security group
 
